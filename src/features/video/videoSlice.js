@@ -12,7 +12,6 @@ const initialState = {
 
 export const fetchVideo = createAsyncThunk("video/fetchVideo", async (id) => {
   const video = await getVideo(id);
-  console.log(video);
   return video;
 });
 
